@@ -1,4 +1,4 @@
-const { BeforeAll, AfterAll } = require("@cucumber/cucumber");
+const { BeforeAll, AfterAll, After, Before } = require("@cucumber/cucumber");
 const { chromium } = require("@playwright/test");
 
 let browser;
@@ -7,9 +7,20 @@ let page;
 class Hooks {
   static async beforeAll() {
     console.log("BeforeAll hook started");
-    browser = await chromium.launch({ headless: false });
-    page = await browser.newPage();
+    browser = await chromium.launch({ headless: false, ignoreHTTPSErrors: true });
     console.log("BeforeAll hook completed");
+  }
+
+  static async beforeEach() {
+    console.log("BeforeEach hook started");
+    page = await browser.newPage({ ignoreHTTPSErrors: true, ignoreCertificateErrors: true });
+    console.log("BeforeEach hook completed");
+  }
+
+  static async afterEach() {
+    console.log("AfterEach hook started");
+    await Hooks.logout();
+    console.log("AfterEach hook completed");
   }
 
   static async afterAll() {
@@ -18,13 +29,21 @@ class Hooks {
     console.log("AfterAll hook completed");
   }
 
-  // Add a getter method to access the page instance
+  static async logout() {
+    console.log("Logout hook started");
+    await page.getByRole('link', { name: ' My Account' }).click();
+    await page.locator('#top-links').getByRole('link', { name: 'Logout' }).click();
+    console.log("Logout hook completed");
+  }
+
   static getPage() {
     return page;
   }
 }
 
 BeforeAll(Hooks.beforeAll);
+Before(Hooks.beforeEach);
+After(Hooks.afterEach);
 AfterAll(Hooks.afterAll);
 
 module.exports = Hooks;

@@ -1,8 +1,6 @@
 {
     "default": {
-        "formatOptions": {
-            "snippetInterface": "async-await"
-        },
+        "format": ["json:reports/report.json"],
         "paths": [
             "src/tests/resources/features/"
         ],

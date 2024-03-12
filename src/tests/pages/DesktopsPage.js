@@ -1,18 +1,13 @@
-const { HomePage } = require('./HomePage');
+const HomePage = require('./HomePage');
 
-class DesktopsPage extends HomePage{
-    constructor(page) {
-        super(page);
-    }
+class DesktopsPage extends HomePage {
+    constructor() {
+        super();
 
-    get desktopsPageUrl() {
-        return this.reader.getProperty('Desktops');
-    }
-    
-    get htcTouchHD() {
+        this.desktopsPageUrl = this.reader.getProperty('Desktops');
         const heading = this.page.getByRole('heading', { name: 'HTC Touch HD' });
-        return heading.getByRole('link');
+        this.htcTouchHD = heading.getByRole('link');
     }
-};
+}
 
 module.exports = DesktopsPage;

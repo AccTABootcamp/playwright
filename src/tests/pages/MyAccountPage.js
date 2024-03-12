@@ -1,11 +1,11 @@
-const { HomePage } = require('./HomePage');
+const HomePage = require('./HomePage');
 
-class MyAccountPage extends HomePage{
-    constructor(page) {
-        super(page);
-    }
-    get myAccountPageUrl() {
-        return this.reader.getProperty('MyAccount');
+class MyAccountPage extends HomePage {
+    constructor() {
+        super();
+        this.myAccountPageUrl = this.reader.getProperty('MyAccount');
+        this.accountUpdateSuccessMessage = this.page.getByText('Success: Your account has');
+        this.editAccountLinkRightSubMenu = this.page.getByRole('link', { name: 'Edit Account' });
     }
 };
 

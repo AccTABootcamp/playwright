@@ -1,17 +1,12 @@
-const { HomePage } = require('./HomePage');
+const HomePage = require('./HomePage');
 
-class CheckoutSuccessPage extends HomePage{
-    constructor(page) {
-        super(page);
-    }
+class CheckoutSuccessPage extends HomePage {
+    constructor() {
+        super();
 
-    get checkoutSuccessPageUrl() {
-        return this.reader.getProperty('CheckoutSuccess');
+        this.checkoutSuccessPageUrl = this.reader.getProperty('CheckoutSuccess');
+        this.buttonContinue = this.page.getByRole('link', { name: 'Continue' });
     }
-    
-    get buttonContinue() {
-        return this.page.getByRole('link', { name: 'Continue' });
-    }
-};
+}
 
 module.exports = CheckoutSuccessPage;

@@ -1,0 +1,688 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;login-form-validation-1",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Login form validation 1",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4301117000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is at DemoShop HOME page",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3140772100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "user clicks Account icon at NAVIGATION BAR",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 284823000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user clicks Login at Account dropdown menu",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 315301400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user is redirected to Login page",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 410635400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user fills in login form with valid credentials",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 254896199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user clicks Login button below Login form",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562525000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user is redirected to My Account page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 952094400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user selects Edit Account option in right sub menu",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 261591599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user is redirected to My Account Information page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141299600
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First Name",
+                      "Olga"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "Green"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Telephone",
+                      "01234567890123456789012345678912"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "E-Mail",
+                      "john.doe.testing!mail5@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user fills in personal details editing form:",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1349490700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "user clicks Continue button below personal details editing form",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 634190799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "user is redirected to My Account page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154131500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "account update success message is displayed",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20146300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 444246599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-form-validation-2",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Login form validation 2",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2383014400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is at DemoShop HOME page",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3471195199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "user clicks Account icon at NAVIGATION BAR",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69348099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user clicks Login at Account dropdown menu",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191416900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user is redirected to Login page",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61566200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user fills in login form with valid credentials",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234461299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user clicks Login button below Login form",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 375302999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user is redirected to My Account page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62326100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "user selects Edit Account option in right sub menu",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187211899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "user is redirected to My Account Information page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33646400
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First Name",
+                      "Ivar"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "Pink"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Telephone",
+                      "0123456789012345678901234512"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "E-Mail",
+                      "john.doe.testing!mail5@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "user fills in personal details editing form:",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 650984599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "user clicks Continue button below personal details editing form",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 365779200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "user is redirected to My Account page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75689299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "account update success message is displayed",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11807000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 306215100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-form-validation-3",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Login form validation 3",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1690892700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is at DemoShop HOME page",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1616452699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "user clicks Account icon at NAVIGATION BAR",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79189300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "user clicks Login at Account dropdown menu",
+            "match": {
+              "location": "src\\tests\\steps\\HomeSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190073300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user is redirected to Login page",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64486300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user fills in login form with valid credentials",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 242777999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user clicks Login button below Login form",
+            "match": {
+              "location": "src\\tests\\steps\\LoginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 391960500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user is redirected to My Account page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57109299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "user selects Edit Account option in right sub menu",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171479500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "user is redirected to My Account Information page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26085399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First Name",
+                      "Santa"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "Yellow"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Telephone",
+                      "0123012345678901234512"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "E-Mail",
+                      "john.doe.testing!mail5@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user fills in personal details editing form:",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 622511200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "user clicks Continue button below personal details editing form",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 384756299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "user is redirected to My Account page",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57049899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "account update success message is displayed",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9399499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 327153099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src\\tests\\resources\\features\\Login.feature"
+  }
+]
