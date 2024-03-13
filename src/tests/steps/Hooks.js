@@ -20,6 +20,7 @@ class Hooks {
   static async afterEach() {
     console.log("AfterEach hook started");
     await Hooks.logout();
+    await page.close();
     console.log("AfterEach hook completed");
   }
 
