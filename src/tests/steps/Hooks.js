@@ -1,5 +1,5 @@
 const { BeforeAll, AfterAll, After, Before } = require("@cucumber/cucumber");
-const { chromium } = require("@playwright/test");
+const { chromium, expect } = require("@playwright/test");
 
 let browser;
 let page;
@@ -20,6 +20,7 @@ class Hooks {
   static async afterEach() {
     console.log("AfterEach hook started");
     await Hooks.logout();
+    await page.context().clearCookies();
     await page.close();
     console.log("AfterEach hook completed");
   }
@@ -34,6 +35,7 @@ class Hooks {
     console.log("Logout hook started");
     await page.getByRole('link', { name: ' My Account' }).click();
     await page.locator('#top-links').getByRole('link', { name: 'Logout' }).click();
+    await expect(page).toHaveTitle("Account Logout");
     console.log("Logout hook completed");
   }
 

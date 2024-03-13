@@ -29,7 +29,7 @@ Feature: Login
       | Last Name  | Pink                             |
       | Telephone  |     0123456789012345678901234512 |
       | E-Mail     | john.doe.testing!mail5@gmail.com |
-    # And user clicks Continue button below personal details editing form
+    And user clicks Continue button below personal details editing form
     Then user is redirected to My Account page
     And account update success message is displayed
 

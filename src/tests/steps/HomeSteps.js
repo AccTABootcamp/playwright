@@ -1,11 +1,15 @@
-const { Given, Then } = require("@cucumber/cucumber");
+const { Given, Then, Before } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
 const  HomePage  = require("../pages/HomePage");
 
 let homePageInstance;
 
-Given('user is at DemoShop HOME page', async function () {
+Before(() => {
     homePageInstance = new HomePage();
+});
+
+Given('user is at DemoShop HOME page', async function () {
+    
     await homePageInstance.utils.visitPage(homePageInstance.page, homePageInstance.homePageUrl);
     await expect(homePageInstance.page).toHaveTitle('Your Store');
     await expect(homePageInstance.page).toHaveURL(homePageInstance.homePageUrl);

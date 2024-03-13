@@ -4,7 +4,6 @@ const Hooks = require("../steps/Hooks");
 
 class HomePage {
     constructor() {
-        console.log("Page init")
         this.page = Hooks.getPage();
         this.utils = new Utils();
         this.reader = new PropertiesReader('configs/environment.properties');

@@ -14,7 +14,39 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2156723600
+              "duration": 1563330100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1519299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1015100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 839199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 782200
             }
           },
           {
@@ -23,11 +55,11 @@
             "line": 4,
             "name": "user is at DemoShop HOME page",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:7"
+              "location": "src\\tests\\steps\\HomeSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 975681299
+              "duration": 1020861999
             }
           },
           {
@@ -36,11 +68,11 @@
             "line": 5,
             "name": "user clicks Account icon at NAVIGATION BAR",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:14"
+              "location": "src\\tests\\steps\\HomeSteps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 220848200
+              "duration": 225681500
             }
           },
           {
@@ -49,11 +81,11 @@
             "line": 6,
             "name": "user clicks Login at Account dropdown menu",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:18"
+              "location": "src\\tests\\steps\\HomeSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 248924800
+              "duration": 184921699
             }
           },
           {
@@ -62,11 +94,11 @@
             "line": 7,
             "name": "user is redirected to Login page",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:7"
+              "location": "src\\tests\\steps\\LoginSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 34410200
+              "duration": 42268399
             }
           },
           {
@@ -75,11 +107,11 @@
             "line": 8,
             "name": "user fills in login form with valid credentials",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:13"
+              "location": "src\\tests\\steps\\LoginSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 186539299
+              "duration": 159823300
             }
           },
           {
@@ -88,11 +120,11 @@
             "line": 9,
             "name": "user clicks Login button below Login form",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:17"
+              "location": "src\\tests\\steps\\LoginSteps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 398134199
+              "duration": 361962399
             }
           },
           {
@@ -101,11 +133,11 @@
             "line": 10,
             "name": "user is redirected to My Account page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 26932800
+              "duration": 25010900
             }
           },
           {
@@ -114,11 +146,11 @@
             "line": 13,
             "name": "user selects Edit Account option in right sub menu",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:17"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 172764900
+              "duration": 167642100
             }
           },
           {
@@ -127,11 +159,11 @@
             "line": 14,
             "name": "user is redirected to My Account Information page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 17959899
+              "duration": 22678799
             }
           },
           {
@@ -169,11 +201,11 @@
             "line": 15,
             "name": "user fills in personal details editing form:",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:13"
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 499595199
+              "duration": 430926600
             }
           },
           {
@@ -182,11 +214,11 @@
             "line": 20,
             "name": "user clicks Continue button below personal details editing form",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:17"
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 380783200
+              "duration": 362612900
             }
           },
           {
@@ -195,11 +227,11 @@
             "line": 21,
             "name": "user is redirected to My Account page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 17678199
+              "duration": 25312500
             }
           },
           {
@@ -208,11 +240,11 @@
             "line": 22,
             "name": "account update success message is displayed",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:13"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 4394500
+              "duration": 4880799
             }
           },
           {
@@ -220,7 +252,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 333305900
+              "duration": 372196700
             }
           }
         ],
@@ -239,7 +271,39 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1022294700
+              "duration": 841144499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 521899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 623599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 690399
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 431399
             }
           },
           {
@@ -248,11 +312,11 @@
             "line": 4,
             "name": "user is at DemoShop HOME page",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:7"
+              "location": "src\\tests\\steps\\HomeSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 941907800
+              "duration": 961724599
             }
           },
           {
@@ -261,11 +325,11 @@
             "line": 5,
             "name": "user clicks Account icon at NAVIGATION BAR",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:14"
+              "location": "src\\tests\\steps\\HomeSteps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 34505800
+              "duration": 45405500
             }
           },
           {
@@ -274,11 +338,11 @@
             "line": 6,
             "name": "user clicks Login at Account dropdown menu",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:18"
+              "location": "src\\tests\\steps\\HomeSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 177807500
+              "duration": 197178899
             }
           },
           {
@@ -287,11 +351,11 @@
             "line": 7,
             "name": "user is redirected to Login page",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:7"
+              "location": "src\\tests\\steps\\LoginSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 48138399
+              "duration": 32345199
             }
           },
           {
@@ -300,11 +364,11 @@
             "line": 8,
             "name": "user fills in login form with valid credentials",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:13"
+              "location": "src\\tests\\steps\\LoginSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 133168299
+              "duration": 145587299
             }
           },
           {
@@ -313,11 +377,11 @@
             "line": 9,
             "name": "user clicks Login button below Login form",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:17"
+              "location": "src\\tests\\steps\\LoginSteps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 362677599
+              "duration": 378333699
             }
           },
           {
@@ -326,11 +390,11 @@
             "line": 10,
             "name": "user is redirected to My Account page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 40153599
+              "duration": 18766700
             }
           },
           {
@@ -339,11 +403,11 @@
             "line": 25,
             "name": "user selects Edit Account option in right sub menu",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:17"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 177375200
+              "duration": 173115099
             }
           },
           {
@@ -352,11 +416,11 @@
             "line": 26,
             "name": "user is redirected to My Account Information page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 19172500
+              "duration": 14412500
             }
           },
           {
@@ -394,11 +458,24 @@
             "line": 27,
             "name": "user fills in personal details editing form:",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:13"
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 337222199
+              "duration": 557713499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "user clicks Continue button below personal details editing form",
+            "match": {
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 390053099
             }
           },
           {
@@ -407,12 +484,11 @@
             "line": 33,
             "name": "user is redirected to My Account page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:11"
             },
             "result": {
-              "status": "failed",
-              "duration": 5012121699,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\e.berzins\\Documents\\PlaywrightTraining\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
+              "status": "passed",
+              "duration": 26814899
             }
           },
           {
@@ -421,11 +497,11 @@
             "line": 34,
             "name": "account update success message is displayed",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:13"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:16"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 7413899
             }
           },
           {
@@ -433,7 +509,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2710261400
+              "duration": 389583699
             }
           }
         ],
@@ -452,7 +528,39 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 736687800
+              "duration": 1317508600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 717800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 505300
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 538300
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 415100
             }
           },
           {
@@ -461,11 +569,11 @@
             "line": 4,
             "name": "user is at DemoShop HOME page",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:7"
+              "location": "src\\tests\\steps\\HomeSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 1017628600
+              "duration": 935397100
             }
           },
           {
@@ -474,11 +582,11 @@
             "line": 5,
             "name": "user clicks Account icon at NAVIGATION BAR",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:14"
+              "location": "src\\tests\\steps\\HomeSteps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 45834699
+              "duration": 37525400
             }
           },
           {
@@ -487,11 +595,11 @@
             "line": 6,
             "name": "user clicks Login at Account dropdown menu",
             "match": {
-              "location": "src\\tests\\steps\\HomeSteps.js:18"
+              "location": "src\\tests\\steps\\HomeSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 164510399
+              "duration": 197731400
             }
           },
           {
@@ -500,11 +608,11 @@
             "line": 7,
             "name": "user is redirected to Login page",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:7"
+              "location": "src\\tests\\steps\\LoginSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 38670300
+              "duration": 36986600
             }
           },
           {
@@ -513,11 +621,11 @@
             "line": 8,
             "name": "user fills in login form with valid credentials",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:13"
+              "location": "src\\tests\\steps\\LoginSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 161972000
+              "duration": 143104400
             }
           },
           {
@@ -526,11 +634,11 @@
             "line": 9,
             "name": "user clicks Login button below Login form",
             "match": {
-              "location": "src\\tests\\steps\\LoginSteps.js:17"
+              "location": "src\\tests\\steps\\LoginSteps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 363139899
+              "duration": 372899699
             }
           },
           {
@@ -539,11 +647,11 @@
             "line": 10,
             "name": "user is redirected to My Account page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 21240399
+              "duration": 19115200
             }
           },
           {
@@ -552,11 +660,11 @@
             "line": 37,
             "name": "user selects Edit Account option in right sub menu",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:17"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 180065299
+              "duration": 173268899
             }
           },
           {
@@ -565,11 +673,11 @@
             "line": 38,
             "name": "user is redirected to My Account Information page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 15381700
+              "duration": 14593400
             }
           },
           {
@@ -607,11 +715,11 @@
             "line": 39,
             "name": "user fills in personal details editing form:",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:13"
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 402437099
+              "duration": 424093699
             }
           },
           {
@@ -620,11 +728,11 @@
             "line": 44,
             "name": "user clicks Continue button below personal details editing form",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:17"
+              "location": "src\\tests\\steps\\MyAccountInformationSteps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 347161899
+              "duration": 396383200
             }
           },
           {
@@ -633,11 +741,11 @@
             "line": 45,
             "name": "user is redirected to My Account page",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:7"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 21201000
+              "duration": 22779399
             }
           },
           {
@@ -646,11 +754,11 @@
             "line": 46,
             "name": "account update success message is displayed",
             "match": {
-              "location": "src\\tests\\steps\\MyAccountSteps.js:13"
+              "location": "src\\tests\\steps\\MyAccountSteps.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 4922399
+              "duration": 4461699
             }
           },
           {
@@ -658,7 +766,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 317156399
+              "duration": 362574599
             }
           }
         ],

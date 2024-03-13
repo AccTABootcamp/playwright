@@ -1,11 +1,14 @@
-const { Then, When } = require("@cucumber/cucumber");
+const { Then, When, Before } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
 const MyAccountInformationPage = require("../pages/myAccountInformationPage");
 
 let myAccountInformationPageInstance;
 
-Then('user is redirected to My Account Information page', async function () {
+Before(() => {
     myAccountInformationPageInstance = new MyAccountInformationPage();
+});
+
+Then('user is redirected to My Account Information page', async function () {
     await expect(myAccountInformationPageInstance.page).toHaveTitle('My Account Information');
     await expect(myAccountInformationPageInstance.page).toHaveURL(myAccountInformationPageInstance.myAccountInformationPageUrl);
 });

@@ -1,11 +1,14 @@
-const { When, Then } = require("@cucumber/cucumber");
+const { When, Then, Before } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
 const LoginPage = require("../pages/LoginPage");
 
 let loginPageInstance;
 
-Then('user is redirected to Login page', async function () {
+Before(() => {
     loginPageInstance = new LoginPage();
+});
+
+Then('user is redirected to Login page', async function () {
     await expect(loginPageInstance.page).toHaveTitle('Account Login');
     await expect(loginPageInstance.page).toHaveURL(loginPageInstance.loginPageUrl);
 });
