@@ -16,7 +16,7 @@ Feature: Login
       | First Name | Olga                             |
       | Last Name  | Green                            |
       | Telephone  | 01234567890123456789012345678912 |
-      | E-Mail     | john.doe.testing!mail5@gmail.com |
+      | E-Mail     | john.doe.testing!mail4@gmail.com |
     And user clicks Continue button below personal details editing form
     Then user is redirected to My Account page
     And account update success message is displayed
@@ -28,7 +28,7 @@ Feature: Login
       | First Name | Ivar                             |
       | Last Name  | Pink                             |
       | Telephone  |     0123456789012345678901234512 |
-      | E-Mail     | john.doe.testing!mail5@gmail.com |
+      | E-Mail     | john.doe.testing!mail4@gmail.com |
     And user clicks Continue button below personal details editing form
     Then user is redirected to My Account page
     And account update success message is displayed
@@ -40,7 +40,7 @@ Feature: Login
       | First Name | Santa                            |
       | Last Name  | Yellow                           |
       | Telephone  |           0123012345678901234512 |
-      | E-Mail     | john.doe.testing!mail5@gmail.com |
+      | E-Mail     | john.doe.testing!mail4@gmail.com |
     And user clicks Continue button below personal details editing form
     Then user is redirected to My Account page
     And account update success message is displayed

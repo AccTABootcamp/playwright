@@ -6,6 +6,7 @@ let loginPageInstance;
 
 Before(() => {
     loginPageInstance = new LoginPage();
+    console.log("LoginPage instance created in steps.")
 });
 
 Then('user is redirected to Login page', async function () {
@@ -14,7 +15,7 @@ Then('user is redirected to Login page', async function () {
 });
 
 When('user fills in login form with valid credentials', async function () {
-    await loginPageInstance.fillLoginForm('john.doe.testing!mail5@gmail.com', '1Password!');
+    await loginPageInstance.fillLoginForm('john.doe.testing!mail4@gmail.com', '1Password!');
 });
 
 Then('user clicks Login button below Login form', async function () {

@@ -7,7 +7,7 @@ let page;
 class Hooks {
   static async beforeAll() {
     console.log("BeforeAll hook started");
-    browser = await chromium.launch({ headless: false, ignoreHTTPSErrors: true });
+    browser = await chromium.launch({ headless: true, ignoreHTTPSErrors: true });
     console.log("BeforeAll hook completed");
   }
 

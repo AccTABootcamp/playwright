@@ -6,6 +6,7 @@ let myAccountInformationPageInstance;
 
 Before(() => {
     myAccountInformationPageInstance = new MyAccountInformationPage();
+    console.log("MyAccountInformationPage instance created in steps.")
 });
 
 Then('user is redirected to My Account Information page', async function () {

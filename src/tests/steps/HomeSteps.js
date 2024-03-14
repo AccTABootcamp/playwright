@@ -6,10 +6,10 @@ let homePageInstance;
 
 Before(() => {
     homePageInstance = new HomePage();
+    console.log("HomePage instance created in steps.")
 });
 
 Given('user is at DemoShop HOME page', async function () {
-    
     await homePageInstance.utils.visitPage(homePageInstance.page, homePageInstance.homePageUrl);
     await expect(homePageInstance.page).toHaveTitle('Your Store');
     await expect(homePageInstance.page).toHaveURL(homePageInstance.homePageUrl);
