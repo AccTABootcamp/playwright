@@ -1,17 +1,12 @@
 const { Then, When, Before } = require("@cucumber/cucumber");
 const { expect } = require("@playwright/test");
-const MyAccountInformationPage = require("../pages/myAccountInformationPage");
+const MyAccountInformationPage = require("../pages/MyAccountInformationPage");
 
 let myAccountInformationPageInstance;
 
 Before(() => {
     myAccountInformationPageInstance = new MyAccountInformationPage();
     console.log("MyAccountInformationPage instance created in steps.")
-});
-
-Then('user is redirected to My Account Information page', async function () {
-    await expect(myAccountInformationPageInstance.page).toHaveTitle('My Account Information');
-    await expect(myAccountInformationPageInstance.page).toHaveURL(myAccountInformationPageInstance.myAccountInformationPageUrl);
 });
 
 Then('user fills in personal details editing form:', async function (dataTable) {

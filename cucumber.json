@@ -1,11 +1,14 @@
 {
     "default": {
-        "format": ["json:reports/report.json"],
+        "format": ["json:reports/cucumber_report.json"],
         "paths": [
             "src/tests/resources/features/"
         ],
         "require": [
             "src/tests/steps/*.js"
-        ]
+        ],
+        "world-parameters": {
+            "configFile": "test-config.json"
+        }
     }
 }

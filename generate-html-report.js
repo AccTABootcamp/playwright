@@ -1,12 +1,17 @@
+// generate-html-report.js
+
 const reporter = require('cucumber-html-reporter');
 
 const options = {
     theme: 'bootstrap',
-    jsonFile: 'reports/report.json',
+    jsonFile: 'reports/cucumber_report.json',
     output: 'reports/cucumber_report.html',
+    screenshotsDirectory: 'reports/screenshots/',
+    storeScreenshots: true,
     reportSuiteAsScenarios: true,
     scenarioTimestamp: true,
     launchReport: true,
+    failedSummaryReport: true,
     metadata: {
         "App Version": "1.0.0",
         "Test Environment": "STAGING",
@@ -14,7 +19,8 @@ const options = {
         "Platform": "Windows 11",
         "Parallel": "Scenarios",
         "Executed": "Local"
-    }
+    },
 };
 
 reporter.generate(options);
+

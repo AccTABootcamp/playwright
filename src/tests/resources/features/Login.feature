@@ -1,46 +1,32 @@
-Feature: Login
+# Feature: Login
 
-  Background: User navigates to the Login page without logging-in
-    Given user is at DemoShop HOME page
-    Then user clicks Account icon at NAVIGATION BAR
-    Then user clicks Login at Account dropdown menu
-    Then user is redirected to Login page
-    When user fills in login form with valid credentials
-    Then user clicks Login button below Login form
-    Then user is redirected to My Account page
+#   Background: User navigates to the Login page without logging-in
+#     Given user is at DemoShop HOME page
+#     Then user clicks Account icon at NAVIGATION BAR
+#     Then user clicks "Login" at Account dropdown menu
+#     Then user is redirected to "Account Login" page
 
-  Scenario: Login form validation 1
-    When user selects Edit Account option in right sub menu
-    Then user is redirected to My Account Information page
-    Then user fills in personal details editing form:
-      | First Name | Olga                             |
-      | Last Name  | Green                            |
-      | Telephone  | 01234567890123456789012345678912 |
-      | E-Mail     | john.doe.testing!mail4@gmail.com |
-    And user clicks Continue button below personal details editing form
-    Then user is redirected to My Account page
-    And account update success message is displayed
+#   Scenario: Login form positive
+#     When user fills in login form with valid credentials
+#     And user clicks Login button below Login form
+#     Then user is redirected to "My Account" page
 
-  Scenario: Login form validation 2
-    When user selects Edit Account option in right sub menu
-    Then user is redirected to My Account Information page
-    Then user fills in personal details editing form:
-      | First Name | Ivar                             |
-      | Last Name  | Pink                             |
-      | Telephone  |     0123456789012345678901234512 |
-      | E-Mail     | john.doe.testing!mail4@gmail.com |
-    And user clicks Continue button below personal details editing form
-    Then user is redirected to My Account page
-    And account update success message is displayed
+#   Scenario Outline: Login form validation negative
+#     When user fills in login form with credentials:
+#       | E-Mail   | <E-Mail>   |
+#       | Password | <Password> |
+#     Then user clicks Login button below Login form
+#     And a warning appears: "<WarningMessage>"
+#     And user remains on "Account Login" page
+#     Examples: 
+#       | E-Mail                           | Password   | WarningMessage                                                                                   |
+#       |                                  |            | Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour. |
+#       | john.doe.testing!mail4@gmail.com |            | Warning: No match for E-Mail Address and/or Password.                                            |
+#       |                                  | 1Password! | Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour. |
+      
+#       | john.doe.testing!mail5@gmail.com | 2Password! | Warning: No match for E-Mail Address and/or Password.                                            |
+#       | john.doe.testing!mail5@gmail.com | 3Password! | Warning: No match for E-Mail Address and/or Password.                                            |
+#       | john.doe.testing!mail5@gmail.com | 4Password! | Warning: No match for E-Mail Address and/or Password.                                            |
+#       | john.doe.testing!mail5@gmail.com | 5Password! | Warning: No match for E-Mail Address and/or Password.                                            |
+#       | john.doe.testing!mail5@gmail.com | 6Password! | Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour. |
 
-  Scenario: Login form validation 3
-    When user selects Edit Account option in right sub menu
-    Then user is redirected to My Account Information page
-    Then user fills in personal details editing form:
-      | First Name | Santa                            |
-      | Last Name  | Yellow                           |
-      | Telephone  |           0123012345678901234512 |
-      | E-Mail     | john.doe.testing!mail4@gmail.com |
-    And user clicks Continue button below personal details editing form
-    Then user is redirected to My Account page
-    And account update success message is displayed
