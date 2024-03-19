@@ -30,18 +30,18 @@ Feature: My_Account
     Examples:
       | Sub Menu Option    | Page Title              |
       | Edit Account       | My Account Information  |
-      # | My Account         | My Account              |
-      # | Password           | Change Password         |
-      # | Address Book       | Address Book            |
-      # | Wish List          | My Wish List            |
-      # | Order History      | Order History           |
-      # | Downloads          | Account Downloads       |
-      # | Recurring payments | Recurring Payments      |
-      # | Reward Points      | Your Reward Points      |
-      # | Returns            | Product Returns         |
-      # | Transactions       | Your Transactions       |
-      # | Newsletter         | Newsletter Subscription |
-      # | Logout             | Account Logout          |
+      | My Account         | My Account              |
+      | Password           | Change Password         |
+      | Address Book       | Address Book            |
+      | Wish List          | My Wish List            |
+      | Order History      | Order History           |
+      | Downloads          | Account Downloads       |
+      | Recurring payments | Recurring Payments      |
+      | Reward Points      | Your Reward Points      |
+      | Returns            | Product Returns         |
+      | Transactions       | Your Transactions       |
+      | Newsletter         | Newsletter Subscription |
+      | Logout             | Account Logout          |
 
   Scenario Outline: My Account page validation, left side section verification
     When user sees menu on the "Left" side of the page
@@ -71,14 +71,14 @@ Feature: My_Account
     Examples:
       | Section              | Section Option                        | Page Title                 |
       | My Account           | Edit your account information         | My Account Information     |
-      # | My Account           | Change your password                  | Change Password            |
-      # | My Account           | Modify your address book entries      | Address Book               |
-      # | My Account           | Modify your wish list                 | My Wish List               |
-      # | My Orders            | View your order history               | Order History              |
-      # | My Orders            | Downloads                             | Account Downloads          |
-      # | My Orders            | Your Reward Points                    | Your Reward Points         |
-      # | My Orders            | View your return requests             | Product Returns            |
-      # | My Orders            | Your Transactions                     | Your Transactions          |
-      # | My Orders            | Recurring payments                    | Recurring Payments         |
-      # | My Affiliate Account | Register for an affiliate account     | Your Affiliate Information |
-      # | Newsletter           | Subscribe / unsubscribe to newsletter | Newsletter Subscription    |
+      | My Account           | Change your password                  | Change Password            |
+      | My Account           | Modify your address book entries      | Address Book               |
+      | My Account           | Modify your wish list                 | My Wish List               |
+      | My Orders            | View your order history               | Order History              |
+      | My Orders            | Downloads                             | Account Downloads          |
+      | My Orders            | Your Reward Points                    | Your Reward Points         |
+      | My Orders            | View your return requests             | Product Returns            |
+      | My Orders            | Your Transactions                     | Your Transactions          |
+      | My Orders            | Recurring payments                    | Recurring Payments         |
+      | My Affiliate Account | Register for an affiliate account     | Your Affiliate Information |
+      | Newsletter           | Subscribe / unsubscribe to newsletter | Newsletter Subscription    |

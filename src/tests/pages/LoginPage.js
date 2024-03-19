@@ -11,6 +11,7 @@ class LoginPage extends HomePage {
         this.loginButton = this.page.getByRole('button', { name: 'Login' });
     }
 
+    //---------------------------------------ACTION METHODS---------------------------------------
     async fillLoginForm(username, password) {
         await Utils.fillField(this.emailTextbox, username);
         await Utils.fillField(this.passwordTextbox, password);

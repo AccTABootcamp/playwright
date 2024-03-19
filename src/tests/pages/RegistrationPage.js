@@ -17,6 +17,7 @@ class RegistrationPage extends HomePage {
         this.continueButton = this.page.getByRole('button', { name: 'Continue' });
     }
 
+    //---------------------------------------ACTION METHODS---------------------------------------
     async fillRegistrationForm(dataTable) {
         const data = dataTable.rowsHash();
         await Utils.fillField(this.firstNameTextbox, data['First Name']);

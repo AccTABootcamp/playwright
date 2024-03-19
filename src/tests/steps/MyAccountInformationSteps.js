@@ -16,3 +16,11 @@ Then('user fills in personal details editing form:', async function (dataTable) 
 Then('user clicks Continue button below personal details editing form', async function () {
     await myAccountInformationPageInstance.buttonContinue.click();
 });
+
+Then('user clicks Back button below personal details editing form', async function () {
+    await myAccountInformationPageInstance.buttonBack.click();
+});
+
+Then('input fields are prefilled with default users credentials', async function () {
+    await myAccountInformationPageInstance.assertEditingFormPrefilledWithDefaultData();
+});

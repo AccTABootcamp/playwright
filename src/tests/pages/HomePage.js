@@ -25,6 +25,7 @@ class HomePage {
 
     }
 
+    //---------------------------------------ACTION METHODS---------------------------------------
     async isLoggedIn() {
         let isLoggedIn = false;
         await this.myAccountIcon.click();
@@ -42,15 +43,12 @@ class HomePage {
         await option.click();
     }
 
+    //---------------------------------------ASSERTION METHODS------------------------------------
     async assertErrorMessagesAreDisplayed(dataTable) {
         const data = dataTable.raw();
         for (const row of data) {
             const errorMessage = row[0];
-            if (errorMessage && errorMessage.trim()) {
-                const errorMessageElement = await this.page.locator(`xpath=//div[@class='text-danger' and text()='${errorMessage}']`);
-                expect(errorMessageElement).not.toBe(null, `Error message '${errorMessage}' is not displayed!`);
-                this.errorCounter++;
-            }
+            this.assertAnErrorMessageIsDisplayed(errorMessage);
         }
     }
 
@@ -63,6 +61,8 @@ class HomePage {
     async assertAnErrorMessageIsDisplayed(inputErrorMessage) {
         if (inputErrorMessage && inputErrorMessage.trim()) {
             const errorMessageElement = await this.page.locator(`xpath=//div[@class='text-danger' and text()='${inputErrorMessage}']`);
+            const elementText = await errorMessageElement.textContent();
+            expect(inputErrorMessage).toBe(elementText);
             expect(errorMessageElement).not.toBe(null, `Error message '${inputErrorMessage}' is not displayed!`);
             this.errorCounter++;
         }
