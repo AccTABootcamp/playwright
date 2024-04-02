@@ -1,3 +1,4 @@
+@registration
 Feature: Registration
 
   Background: User navigates to the Registration page without logging-in (QESDEMO-2735)
@@ -7,6 +8,7 @@ Feature: Registration
     Then user clicks "Register" at Account dropdown menu
     Then user is redirected to "Register Account" page
 
+@negative_chekbox_and_taken_email
   Scenario: Validate registration form inputs - checkbox and taken e-mail warnings (QESDEMO-2757)
     When user fills in registration form with credentials:
       | First Name       | John                             |
@@ -22,6 +24,7 @@ Feature: Registration
     Then user clicks Continue button below Registration form
     And a warning appears: " Warning: E-Mail Address is already registered!"
 
+@negative_mandatory_fields
   Scenario Outline: Validate registration form inputs - are fields mandatory (QESDEMO-2756)
     When user fills in registration form with credentials:
       | First Name       | <FirstName>        |
@@ -42,7 +45,6 @@ Feature: Registration
       | <PasswordErrorMessage>        |
       | <PasswordConfirmErrorMessage> |
     And no other input error message is displayed
-
     Examples: 
       | FirstName | LastName | Telephone  | E-Mail                            | Password   | Password Confirm | FirstNameErrorMessage                           | LastNameErrorMessage                           | TelephoneErrorMessage                          | EmailErrorMessage                           | PasswordErrorMessage                          | PasswordConfirmErrorMessage                    |
       |           | Doe      | 0123456789 | john.doe.12312312531230@gmail.com | 1Password! |       1Password! | First Name must be between 1 and 32 characters! |                                                |                                                |                                             |                                               |                                                |
@@ -52,6 +54,7 @@ Feature: Registration
       | John      | Doe      | 0123456789 | john.doe.12312312531230@gmail.com |            |       1Password! |                                                 |                                                |                                                |                                             | Password must be between 4 and 20 characters! | Password confirmation does not match password! |
       | John      | Doe      | 0123456789 | john.doe.12312312531230@gmail.com | 1Password! |                  |                                                 |                                                |                                                |                                             |                                               | Password confirmation does not match password! |
 
+@negative_email_field
   Scenario Outline: Validate registration form inputs - email field error messages and warnings (QESDEMO-2758, QESDEMO-2762)
     When user fills in registration form with credentials:
       | First Name       | John       |

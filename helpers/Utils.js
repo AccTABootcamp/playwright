@@ -95,6 +95,24 @@ class Utils {
         return viewportSize.width;
     }
 
+    static async findElementIndex(collection, element) {
+        const count = await collection.count();
+        for (let i = 0; i < count; i++) {
+            const currentElement = await collection.nth(i);
+            const currentElementText = await currentElement.innerText();
+            if (currentElementText === await element.innerText()) {
+                return i + 1;
+            } 
+        }
+        return -1;
+    }
+
+
+
+
+
+
+
 };
 
 module.exports = Utils;

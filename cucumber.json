@@ -9,6 +9,7 @@
         ],
         "world-parameters": {
             "configFile": "test-config.json"
-        }
+        },
+        "parallel": 1
     }
 }

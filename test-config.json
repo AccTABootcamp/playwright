@@ -8,9 +8,9 @@
             "--ignore-certificate-errors"
         ],
         "viewport": {
-            "width": 1400,
-            "height": 600
+            "width": 1024,
+            "height": 768
         },
-        "headless": true
+        "headless": false
     }
 }

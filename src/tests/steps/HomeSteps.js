@@ -7,7 +7,7 @@ let homePageInstance;
 
 Before(() => {
   homePageInstance = new HomePage();
-  console.log("HomePage instance created in steps.")
+  console.log("HomePage instance created in steps.");
 });
 
 Given('user is at DemoShop HOME page', async function () {
@@ -25,9 +25,12 @@ Then('user is NOT logged in', async function () {
   expect(homePageInstance.isLoggedIn()).toBeFalsy;
 })
 
-Then('user is redirected to {string} page', async function (inputPageTitle) {
+Then('user is redirected to {string} page',{ timeout: 150000 }, async function (inputPageTitle) {
   const readerInput = await Utils.removeAllSpaces(inputPageTitle);
   const expectedPageUrl = await homePageInstance.reader.getProperty(readerInput);
+
+  await homePageInstance.page.waitForURL(expectedPageUrl);
+
   await expect(homePageInstance.page).toHaveTitle(inputPageTitle);
   await expect(homePageInstance.page).toHaveURL(expectedPageUrl);
 })
@@ -58,6 +61,10 @@ Then('no other input error message is displayed', async function () {
 
 Then('an error message {string} is displayed', async function (inputErroMessage) {
   await homePageInstance.assertAnErrorMessageIsDisplayed(inputErroMessage);
+})
+
+Then('user clicks on Shopping Cart in Navigation bar', async function() {
+  await homePageInstance.shoppingCart.click();
 })
 
 

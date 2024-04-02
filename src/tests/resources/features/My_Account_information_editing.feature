@@ -1,3 +1,4 @@
+@my_account_editing
 Feature: My_Account_editing
 
   Background: User navigates to the Login page without logging-in
@@ -12,6 +13,8 @@ Feature: My_Account_editing
     Then user clicks "Edit Account" button in the sub menu
     Then user is redirected to "My Account Information" page
 
+@negative_input_wa_email
+@reset_user_credentials
   Scenario Outline: Account information editing, input field verification
     Then user fills in personal details editing form:
       | First Name | <FirstName>                      |
@@ -36,8 +39,10 @@ Feature: My_Account_editing
       | Jonthirtythreecharacterslonginput | Bluethirtytwocharacterslonginput  | 012345678901234567890123456789123 | First Name must be between 1 and 32 characters! |                                                | Telephone must be between 3 and 32 characters! |
       |                                   | B                                 | 01                                | First Name must be between 1 and 32 characters! |                                                | Telephone must be between 3 and 32 characters! |
 
+@negative_input_only_email
+@reset_user_credentials
   Scenario Outline: Account information editing, e-mail field verification
-    And input fields are prefilled with default users credentials
+    When input fields are prefilled with default users credentials
     Then user fills in personal details editing form:
       | First Name | John         |
       | Last Name  | Doe          |
@@ -63,6 +68,8 @@ Feature: My_Account_editing
       | 1@x1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa |                                             | Please enter an email address.                                                   |
       | 1@1aaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa |                                             | Please enter an email address.                                                   |
 
+@negative_input_fields_mandatory
+@reset_user_credentials
   Scenario Outline: Account information editing, Account information editing, are fields mandatory
     Then user fills in personal details editing form:
       | First Name | <FirstName> |

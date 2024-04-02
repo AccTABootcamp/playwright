@@ -1,3 +1,4 @@
+@my_account
 Feature: My_Account
 
   Background: User navigates to the Login page without logging-in
@@ -9,6 +10,7 @@ Feature: My_Account
     And user clicks Login button below Login form
     Then user is redirected to "My Account" page
 
+@right_menu_outline
   Scenario Outline: My Account page validation, right side sub-menu verification
     When user sees sub menu on the "Right" side of the page
     And only the following links are present:
@@ -43,6 +45,7 @@ Feature: My_Account
       | Newsletter         | Newsletter Subscription |
       | Logout             | Account Logout          |
 
+@left_menu_outline
   Scenario Outline: My Account page validation, left side section verification
     When user sees menu on the "Left" side of the page
     And only the following sections are present:

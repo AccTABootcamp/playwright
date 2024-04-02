@@ -7,10 +7,10 @@ const options = {
     jsonFile: 'reports/cucumber_report.json',
     output: 'reports/cucumber_report.html',
     screenshotsDirectory: 'reports/screenshots/',
-    storeScreenshots: true,
+    storeScreenshots: false,
     reportSuiteAsScenarios: true,
     scenarioTimestamp: true,
-    launchReport: true,
+    launchReport: false,
     failedSummaryReport: true,
     metadata: {
         "App Version": "1.0.0",

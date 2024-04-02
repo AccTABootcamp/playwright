@@ -10,8 +10,8 @@ class HomePage {
 
         this.errorCounter = 0;
 
-        this.homePageUrl = this.reader.getProperty('Home');
-        this.shoppingCartIcon = this.page.getByRole('link', { name: ' Shopping Cart' });
+        this.homePageUrl = this.reader.getProperty('YourStore');
+        this.shoppingCart = this.page.locator('xpath=//a[@title="Shopping Cart"]');
         this.myAccountDropdownOptionOrderHistory = this.page.getByRole('link', { name: 'Order History' });
         this.myAccountDropdownOptionLogin = this.page.getByRole('link', { name: 'Login' });
         this.desktopsDropdownTab = this.page.getByRole('link', { name: 'Desktops', exact: true });
@@ -21,6 +21,7 @@ class HomePage {
         this.alertDangerElement = this.page.locator('xpath=//*[@class="alert alert-danger alert-dismissible"]');
         this.alertSuccessElement = this.page.locator('xpath=//*[@class="alert alert-success alert-dismissible"]');
         this.errorMessages = this.page.locator('xpath=//div[@class="text-danger"]');
+        this.phonesAndPDAsTab = this.page.getByRole('link', { name: 'Phones & PDAs' });
 
 
     }
