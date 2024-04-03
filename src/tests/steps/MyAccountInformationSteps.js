@@ -6,7 +6,6 @@ let myAccountInformationPageInstance;
 
 Before(() => {
     myAccountInformationPageInstance = new MyAccountInformationPage();
-    console.log("MyAccountInformationPage instance created in steps.")
 });
 
 Then('user fills in personal details editing form:', async function (dataTable) {

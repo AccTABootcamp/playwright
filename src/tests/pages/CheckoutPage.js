@@ -73,7 +73,7 @@ class CheckoutPage extends HomePage {
         await Utils.fillField(this.addressOneFieldBilling, data['Address 1']);
         await Utils.fillField(this.addressTwoFieldBilling, data['Address 2']);
         await Utils.fillField(this.cityFieldBilling, data['City']);
-        await Utils.fillField(this.addressTwoFieldBilling, data['Post Code']);
+        await Utils.fillField(this.postcodeFieldBilling, data['Post Code']);
         await this.countrySelectBilling.selectOption(data['Country']);
         await this.regionSelectBilling.selectOption(data['Region / State']);
     }
@@ -113,30 +113,9 @@ class CheckoutPage extends HomePage {
 
     async assertTotalTableMatchesInputData(dataTable){
         const data = dataTable.rowsHash();
-        expect(await this.subTotalValueInTable).toHaveText(data['Sub-Total:'])
-        expect(await this.flatShippingValueInTable).toHaveText(data['Flat Shipping Rate:'])
-        expect(await this.totalValueInTable).toHaveText(data['Total:'])
-    }
-
-
-    async waitForCheckoutBodyToLoad() {
-        await this.page.waitForSelector('#collapse-checkout-confirm .panel-body > *');
-    }
-    
-    async waitForBillingAddressBodyToLoad() {
-        await this.page.waitForSelector('#collapse-payment-address .panel-body > *');
-    }
-
-    async waitForShippingAddressBodyToLoad() {
-        await this.page.waitForSelector('#collapse-shipping-address .panel-body > *');
-    }
-
-    async waitForPaymentMethodBodyToLoad() {
-        await this.page.waitForSelector('#collapse-payment-method .panel-body > *');
-    }
-
-    async waitForShippingMethodBodyToLoad() {
-        await this.page.waitForSelector('#collapse-shipping-method .panel-body > *');
+        await expect(await this.subTotalValueInTable).toHaveText(data['Sub-Total:'])
+        await expect(await this.flatShippingValueInTable).toHaveText(data['Flat Shipping Rate:'])
+        await expect(await this.totalValueInTable).toHaveText(data['Total:'])
     }
     
 

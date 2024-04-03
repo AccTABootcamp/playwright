@@ -7,7 +7,6 @@ let registrationPageInstance;
 
 Before(() => {
   registrationPageInstance = new RegistrationPage();
-  console.log("RegistrationPage instance created in steps.")
 });
 
 When('user fills in registration form with credentials:', async function (dataTable) {

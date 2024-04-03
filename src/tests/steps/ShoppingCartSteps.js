@@ -10,7 +10,8 @@ Before(() => {
 });
 
 When('user clicks on Phones & PDAs menu option', async function () {
-  await shoppingCartPageInstance.phonesAndPDAsTab.click();
+  await shoppingCartPageInstance.desktopsDropdownTab.click();
+  await shoppingCartPageInstance.desktopsShowAll.click();
 })
 
 Then('user clicks the Checkout button at the bottom of the Shopping Cart page', async function () {
@@ -23,7 +24,7 @@ Then('user sees the sub-total table and it has following credentials:', async fu
 
 Then('user sees product {string} on the page it has following credentials:', async function (productName, dataTable) {
   const productRow = await shoppingCartPageInstance.returnProductRowByText(productName);
-  expect(productRow).not.toBeNull;
+  await expect(productRow).not.toBeNull;
 
   const data = dataTable.rowsHash();
   const nameCell = await shoppingCartPageInstance.returnTableCellByProductNameAndHeadingTitle("Product Name", productName);
@@ -31,9 +32,9 @@ Then('user sees product {string} on the page it has following credentials:', asy
   const priceCell = await shoppingCartPageInstance.returnTableCellByProductNameAndHeadingTitle("Unit Price", productName);
   const totalCell = await shoppingCartPageInstance.returnTableCellByProductNameAndHeadingTitle("Total", productName);
 
-  expect(nameCell).toContainText(data['Product Name']);
-  expect(quantityCell).toHaveValue(data['Quantity']);
-  expect(priceCell).toHaveText(data['Unit Price']);
-  expect(totalCell).toHaveText(data['Total']);
+  await expect(nameCell).toContainText(data['Product Name']);
+  await expect(quantityCell).toHaveValue(data['Quantity']);
+  await expect(priceCell).toHaveText(data['Unit Price']);
+  await expect(totalCell).toHaveText(data['Total']);
 })
 

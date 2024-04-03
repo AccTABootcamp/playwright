@@ -7,7 +7,6 @@ let homePageInstance;
 
 Before(() => {
   homePageInstance = new HomePage();
-  console.log("HomePage instance created in steps.");
 });
 
 Given('user is at DemoShop HOME page', async function () {
@@ -22,7 +21,7 @@ Then('user clicks Account icon at NAVIGATION BAR', async function () {
 
 
 Then('user is NOT logged in', async function () {
-  expect(homePageInstance.isLoggedIn()).toBeFalsy;
+  await expect(homePageInstance.isLoggedIn()).toBeFalsy;
 })
 
 Then('user is redirected to {string} page',{ timeout: 150000 }, async function (inputPageTitle) {
@@ -48,7 +47,7 @@ Then('user remains on {string} page', async function (inputPageTitle) {
 
 Then('a warning appears: {string}', async function (inputAlertText) {
   const actualAlertText = await homePageInstance.alertDangerElement.textContent();
-  expect(actualAlertText).toBe(inputAlertText, "Warning text does not match!");
+  await expect(actualAlertText).toBe(inputAlertText, "Warning text does not match!");
 })
 
 Then('the following error messages are displayed:', async function (datatable) {

@@ -55,7 +55,7 @@ Then('user clicks the Continue button at the bottom of the Delivery Details form
   await checkoutPageInstance.continueButtonShippingAddress.click();
 })
 
-Then('user sees the subtotal table and it has following product credentials:',{ timeout: 150000 }, async function (dataTable) {
+Then('user sees the subtotal table and it has following product credentials:', async function (dataTable) {
   const data = dataTable.rowsHash();
   const productName = await data['Product Name'];
   let productRow;
@@ -65,17 +65,17 @@ Then('user sees the subtotal table and it has following product credentials:',{ 
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
 
-  expect(productRow).not.toBeNull;
+  await expect(productRow).not.toBeNull;
 
   const nameCell = await checkoutPageInstance.returnTableCellByProductNameAndHeadingTitle("Product Name", productName);
   const quantityCell = await checkoutPageInstance.returnTableCellByProductNameAndHeadingTitle("Quantity", productName);
   const priceCell = await checkoutPageInstance.returnTableCellByProductNameAndHeadingTitle("Unit Price", productName);
   const totalCell = await checkoutPageInstance.returnTableCellByProductNameAndHeadingTitle("Total", productName);
 
-  expect(nameCell).toHaveText(data['Product Name']);
-  expect(quantityCell).toHaveText(data['Quantity']);
-  expect(priceCell).toHaveText(data['Unit Price']);
-  expect(totalCell).toHaveText(data['Total']);
+  await expect(nameCell).toHaveText(data['Product Name']);
+  await expect(quantityCell).toHaveText(data['Quantity']);
+  await expect(priceCell).toHaveText(data['Unit Price']);
+  await expect(totalCell).toHaveText(data['Total']);
 })
 
 Then('user clicks the Continue button at the bottom of the Payment Method form', async function () {

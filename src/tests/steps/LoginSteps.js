@@ -6,7 +6,6 @@ let loginPageInstance;
 
 Before(() => {
     loginPageInstance = new LoginPage();
-    console.log("LoginPage instance created in steps.")
 });
 
 When('user fills in login form with valid credentials', async function () {
